@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ansh Creation | Handmade Home Products</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts for a premium look -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <!-- Brand Name on the Left -->
+       <div class="nav-brand">
+    <a href="index.html">
+        <img src="Assets/Logo.webp" alt="Ansh Creation Logo" class="nav-logo">
+        <!-- <span class="brand-ansh">Ansh</span>
+        <span class="brand-creation">Creation</span> -->
+    </a>
+</div>
+
+<style>
+    .nav-brand a {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        text-decoration: none;
+    }
+
+    .nav-logo {
+        width: 100px;
+        height: 150px;
+        object-fit: contain;
+        border-radius: 50%;
+    }
+
+    .brand-ansh {
+        font-size: 28px;
+        font-weight: 700;
+        color: #000;
+    }
+
+    .brand-creation {
+        font-size: 28px;
+        font-weight: 700;
+        color: #c89b3c;
+    }
+
+    @media (max-width: 768px) {
+        .nav-logo {
+            width: 100px;
+            height: 80px;
+        }
+
+        .brand-ansh,
+        .brand-creation {
+            font-size: 22px;
+        }
+    }
+</style>
+
+        <!-- Links in the Middle -->
+        <div class="nav-links">
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="shop.html">Shop</a>
+            <a href="career.html">Careers</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+        
+        <!-- Action Button on the Right -->
+        <div class="nav-actions">
+            <a href="https://wa.me/+919509763013" class="whatsapp-btn" target="_blank">
+                <i class="fab fa-whatsapp"></i> <span>WhatsApp Booking</span>
+            </a>
+        </div>
+
+        <!-- Mobile Menu Toggle -->
+        <div class="menu-toggle" id="mobile-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- Hero Slider Section -->
+<section class="hero-slider">
+
+    <div class="slider-container">
+
+        <!-- Slide 1 -->
+        <div class="slide active">
+
+             <img src="Assets/img/Hero section slides/slide 1 pc.webp"
+                class="hero-desktop"
+                alt="Slide 5">
+
+            <img src="Assets/img/Hero section slides/slide 1 mobile.webp"
+                class="hero-mobile"
+                alt="Slide 1">
+
+            <div class="slide-content">
+                <h1>Support Handmade, Support Dreams</h1>
+                <p>Beautiful handcrafted creations made by talented women artisans.</p>
+                <a href="shop.html" class="hero-btn">Explore Collection</a>
+            </div>
+
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="slide">
+
+<img src="Assets/img/Hero section slides/slide 2 pc.webp"
+                class="hero-desktop"
+                alt="Slide 5">
+
+            <img src="Assets/img/Hero section slides/slide 2 mobile.webp"
+                class="hero-mobile"
+                alt="Slide 2">
+
+            <div class="slide-content">
+                <h1>Empowering Women Through Craft</h1>
+                <p>Every purchase supports a family's future.</p>
+                <a href="about.html" class="hero-btn">Learn More</a>
+            </div>
+
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="slide">
+
+             <img src="Assets/img/Hero section slides/slide 3 pc.webp"
+                class="hero-desktop"
+                alt="Slide 3">
+
+            <img src="Assets/img/Hero section slides/slide 3 mobile.webp"
+                class="hero-mobile"
+                alt="Slide 5">
+
+            <div class="slide-content">
+                <h1>Made In India</h1>
+                <p>Promoting local craftsmanship and sustainable products.</p>
+                <a href="shop.html" class="hero-btn">Shop Now</a>
+            </div>
+
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="slide">
+
+<img src="Assets/img/Hero section slides/slide 4 pc.webp"
+                class="hero-desktop"
+                alt="Slide 5">
+
+            <img src="Assets/img/Hero section slides/slide 4 mobile.webp"
+                class="hero-mobile"
+                alt="Slide 4">
+
+            <div class="slide-content">
+                <h1>Vocal For Local</h1>
+                <p>Supporting Indian artisans and handmade businesses.</p>
+                <a href="shop.html" class="hero-btn">View Products</a>
+            </div>
+
+        </div>
+
+        <!-- Slide 5 -->
+        <div class="slide">
+
+<img src="Assets/img/Hero section slides/slide 5 pc.webp"
+                class="hero-desktop"
+                alt="Slide 5">
+
+            <img src="Assets/img/Hero section slides/slide 5 mobile.webp"
+                class="hero-mobile"
+                alt="Slide 5">
+
+            <div class="slide-content">
+                <h1>Crafted With Love</h1>
+                <p>Unique handmade products designed with passion.</p>
+                <a href="contact.html" class="hero-btn">Contact Us</a>
+            </div>
+
+        </div>
+
+        <!-- Arrows -->
+        <button class="slider-btn prev">&#10094;</button>
+        <button class="slider-btn next">&#10095;</button>
+
+        <!-- Dots -->
+        <div class="slider-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="about-section">
+    <div class="container">
+        <!-- Heading Section -->
+        <div class="about-header">
+            <span class="sub-heading">Our Story</span>
+            <h2 class="main-heading">Empowering Women through Art</h2>
+            <div class="heading-separator"></div>
+        </div>
+
+        <!-- Three-Column Content -->
+        <div class="about-grid">
+            <!-- Left Side: Paragraph -->
+            <div class="about-column text-left">
+                <h3 class="roots-heading">Our Roots</h3>
+                <p>
+                    Ansh Creation was born in the heart of Jaipur with a simple yet powerful vision: to provide a platform for exceptionally talented women artisans. We believe that every handmade product tells a story of heritage, patience, and skill.
+                </p>
+                <p>
+                    By merging traditional techniques with modern home aesthetics, we create pieces that aren't just products, but milestones of women's financial independence.
+                </p>
+                <!-- Read More Button -->
+                <a href="about.html" class="read-more-btn roots-btn">Read Our Story</a>
+            </div>
+
+            <!-- Middle: Square Photo -->
+            <div class="about-column image-center">
+                <div class="image-frame">
+                    <img src="Assets/about us.png" alt="Artisan at work">
+                </div>
+            </div>
+
+            <!-- Right Side: Paragraph -->
+            <div class="about-column text-right">
+                <h3 class="impact-heading">Our Impact</h3>
+                <p>
+                    Every stitch you see and every texture you feel contributes directly to the empowerment of our community. We focus on zero-waste production and sustainable sourcing, ensuring our growth honors the environment.
+                </p>
+                <p>
+                    Today, we stand as a symbol of achievement, showcasing how handmade home products can transform lives, provide education, and build a stronger society.
+                </p>
+                <!-- Read More Button -->
+                <a href="about.html" class="read-more-btn impact-btn">View Our Impact</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Scrolling Marquee Section -->
+<div class="marquee-container">
+    <div class="marquee-content">
+        <!-- Group 1 -->
+        <span class="marquee-item"><i class="fas fa-certificate"></i> Fabric Toys</span>
+        <span class="marquee-item"><i class="fas fa-key"></i> 2 Leg Fabric Key Chains</span>
+        <span class="marquee-item"><i class="fas fa-key"></i> 4 Leg Fabric Key Chains</span>
+        <span class="marquee-item"><i class="fas fa-briefcase"></i> Office Supplies</span>
+        <span class="marquee-item"><i class="fas fa-home"></i> Home Decor</span>
+        <span class="marquee-item"><i class="fas fa-gem"></i> Accessories</span>
+        <span class="marquee-item"><i class="fas fa-shopping-bag"></i> Bags & Pouches</span>
+        <span class="marquee-item"><i class="fas fa-cut"></i> Crochet</span>
+        
+        <!-- Group 2 (Duplicate for Seamless Infinite Loop) -->
+        <span class="marquee-item"><i class="fas fa-certificate"></i> Fabric Toys</span>
+        <span class="marquee-item"><i class="fas fa-key"></i> 2 Leg Fabric Key Chains</span>
+        <span class="marquee-item"><i class="fas fa-key"></i> 4 Leg Fabric Key Chains</span>
+        <span class="marquee-item"><i class="fas fa-briefcase"></i> Office Supplies</span>
+        <span class="marquee-item"><i class="fas fa-home"></i> Home Decor</span>
+        <span class="marquee-item"><i class="fas fa-gem"></i> Accessories</span>
+        <span class="marquee-item"><i class="fas fa-shopping-bag"></i> Bags & Pouches</span>
+        <span class="marquee-item"><i class="fas fa-cut"></i> Crochet</span>
+    </div>
+</div>
+
+<section class="category-section">
+    <div class="container">
+        <h2 class="section-title">Shop by Category</h2>
+
+        <div class="category-grid">
+
+            <a href="shop.html?cat=toys" class="category-card">
+                <img src="Assets/img/Fabric Toys & keychains/photo 1.webp" alt="Fabric Toys">
+                <div class="category-overlay">
+                    <h3>Fabric Toys & Keychains</h3>
+                    <p>2 Leg & 4 Leg Varieties</p>
+                </div>
+            </a>
+
+            <a href="shop.html?cat=office" class="category-card">
+                <img src="Assets/img/Office supplies/photo 1.webp" alt="Office Supplies">
+                <div class="category-overlay">
+                    <h3>Office Supplies</h3>
+                </div>
+            </a>
+
+            <!-- Changed home-decor -> decor -->
+            <a href="shop.html?cat=decor" class="category-card">
+                <img src="Assets/img/Home decore/photo 4.webp" alt="Home Decor">
+                <div class="category-overlay">
+                    <h3>Home Decor</h3>
+                </div>
+            </a>
+
+            <a href="shop.html?cat=accessories" class="category-card">
+                <img src="Assets/img/Accessories/acc 5.webp" alt="Accessories">
+                <div class="category-overlay">
+                    <h3>Accessories</h3>
+                </div>
+            </a>
+
+            <a href="shop.html?cat=bags" class="category-card">
+                <img src="Assets/img/Bags & pouches/photo 2.jpg" alt="Bags & Pouches">
+                <div class="category-overlay">
+                    <h3>Bags & Pouches</h3>
+                </div>
+            </a>
+
+            <a href="shop.html?cat=crochet" class="category-card">
+                <img src="Assets/img/crochet/cro 8.jpeg" alt="Crochet">
+                <div class="category-overlay">
+                    <h3>Crochet</h3>
+                </div>
+            </a>
+
+            <!-- Changed home-decor -> Gift -->
+            <a href="shop.html?cat=Gift" class="category-card">
+                <img src="Assets/img/Gift hampers/photo 3.webp" alt="Gift Hamper">
+                <div class="category-overlay">
+                    <h3>Gift Hamper</h3>
+                </div>
+            </a>
+
+            <!-- Changed home-decor -> Sunglass -->
+            <a href="shop.html?cat=Sunglass" class="category-card">
+                <img src="Assets/img/sunglasses cover/sunglass 11.webp" alt="Sunglasses Cover">
+                <div class="category-overlay">
+                    <h3>Sunglasses Cover</h3>
+                </div>
+            </a>
+
+        </div>
+    </div>
+</section>
+
+
+<section class="featured-products">
+
+    <div class="section-header">
+        <span class="section-tag">✨ Handmade Collection</span>
+        <h2>Most Loved Products</h2>
+        <p>Discover our best-selling handcrafted creations made with love.</p>
+    </div>
+
+    <div class="products-grid">
+
+        <!-- Product 1 -->
+        <div class="product-card">
+
+            <span class="badge">🔥 Best Seller</span>
+
+            <div class="product-image">
+                <img src="Assets/img/New folder/home page/best seller.webp" alt="">
+            </div>
+
+            <div class="product-info">
+                <h3>Designer Fabric Toys</h3>
+
+                <div class="rating">
+                    ★★★★★ <span>(4.9)</span>
+                </div>
+
+                <p>Handcrafted by women artisans.</p>
+
+                <div class="product-footer">
+                    <a href="shop.html?cat=toys" class="view-btn">
+                        View Product
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card">
+
+            <span class="badge">⭐ Popular</span>
+
+            <div class="product-image">
+                <img src="Assets/img/New folder/home page/popular.webp" alt="">
+            </div>
+
+            <div class="product-info">
+                <h3>Handmade Crochet</h3>
+
+                <div class="rating">
+                    ★★★★★ <span>(4.8)</span>
+                </div>
+
+                <p>Eco-friendly and durable.</p>
+
+                <div class="product-footer">
+                    <a href="shop.html?cat=crochet" class="view-btn">
+                        View Product
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card">
+
+            <span class="badge">💖 Most Loved</span>
+
+            <div class="product-image">
+                <img src="Assets/img/New folder/home page/most loved.webp" alt="">
+            </div>
+
+            <div class="product-info">
+                <h3>Handmade Tote Bag</h3>
+
+                <div class="rating">
+                    ★★★★★ <span>(5.0)</span>
+                </div>
+
+                <p>Elegant and stylish design.</p>
+
+                <div class="product-footer">
+                    <a href="shop.html?cat=bags" class="view-btn">
+                        View Product
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product-card">
+
+            <span class="badge">🛍 Trending</span>
+
+            <div class="product-image">
+                <img src="Assets/img/New folder/home page/trending.webp" alt="">
+            </div>
+
+            <div class="product-info">
+                <h3>Premium Pouches</h3>
+
+                <div class="rating">
+                    ★★★★★ <span>(4.7)</span>
+                </div>
+
+                <p>Perfect for daily use.</p>
+
+                <div class="product-footer">
+                    <a href="shop.html?cat=bags" class="view-btn">
+                        View Product
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+<!-- ==========================================
+     HTML: INDEX PAGE - COLLECTION MOSAIC GRID
+     ========================================== -->
+<section class="mosaic-collection-section">
+    <div class="container mosaic-container">
+        
+        <!-- Header Text Block -->
+        <div class="mosaic-header">
+            <span class="mosaic-sub-tag">Our Creative Spectrum</span>
+            <h2 class="mosaic-main-heading">Explore Our Handcrafted Universe</h2>
+            <div class="mosaic-separator"></div>
+            <p class="mosaic-desc">
+                From whimsical fabric toys to sustainable lifestyle essentials. Every piece is handcrafted using 100% cotton fabric by the resilient women artisans of our NGO cluster, transforming traditional heritage into independent futures.
+            </p>
+        </div>
+
+        <!-- 1. CATEGORY GROUP: FABRIC COLLECTION -->
+        <div class="mosaic-group-wrapper">
+            <h3 class="group-title"><i class="fas fa-cut"></i> Handmade Fabric Collection</h3>
+            <div class="mosaic-micro-grid">
+                <div class="micro-card">
+                    <div class="micro-icon"><i class="fas fa-key"></i></div>
+                    <span>Keychains & Puppets</span>
+                </div>
+                <div class="micro-card">
+                    <div class="micro-icon"><i class="fas fa-shapes"></i></div>
+                    <span>2-Leg Fabric Toys</span>
+                </div>
+                <div class="micro-card">
+                    <div class="micro-icon"><i class="fas fa-elephant"></i></div>
+                    <span>4-Leg Fabric Toys</span>
+                </div>
+                <div class="micro-card">
+                    <div class="micro-icon"><i class="fas fa-pencil-alt"></i></div>
+                    <span>Puppet Pencils</span>
+                </div>
+                <div class="micro-card">
+                    <div class="micro-icon"><i class="fas fa-image"></i></div>
+                    <span>Wall Hangings</span>
+                </div>
+                <div class="micro-card">
+                    <div class="micro-icon"><i class="fas fa-gem"></i></div>
+                    <span>Bag Charms</span>
+                </div>
+                <div class="micro-card">
+                    <div class="micro-icon"><i class="fas fa-ribbon"></i></div>
+                    <span>Parandie (Chutila)</span>
+                </div>
+                <div class="micro-card">
+                    <div class="micro-icon"><i class="fas fa-home"></i></div>
+                    <span>Toran (Bandanwar)</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2. CATEGORY GROUP: BAGS & UTILITY -->
+        <div class="mosaic-group-wrapper">
+            <h3 class="group-title"><i class="fas fa-shopping-bag"></i> Bags & Utility Products</h3>
+            <div class="mosaic-micro-grid">
+                <div class="micro-card">
+                    <div class="micro-icon"><i class="fas fa-shopping-bag"></i></div>
+                    <span>Tote & Handbags</span>
+                </div>
+                <div class="micro-card">
+                    <div class="micro-icon"><i class="fas fa-backpack"></i></div>
+                    <span>Backpacks & Chest Bags</span>
+                </div>
+                <div class="micro-card">
+                    <div class="micro-icon"><i class="fas fa-wallet"></i></div>
+                    <span>Fabric Clutches</span>
+                </div>
+                <div class="micro-card">
+                    <div class="micro-icon"><i class="fas fa-mobile-alt"></i></div>
+                    <span>Mobile Slings</span>
+                </div>
+                <div class="micro-card">
+                    <div class="micro-icon"><i class="fas fa-layer-group"></i></div>
+                    <span>Toiletry Sets (3Pcs)</span>
+                </div>
+                <div class="micro-card">
+                    <div class="micro-icon"><i class="fas fa-glasses"></i></div>
+                    <span>Sunglasses Covers</span>
+                </div>
+                <div class="micro-card">
+                    <div class="micro-icon"><i class="fas fa-box-open"></i></div>
+                    <span>Coin & Jewellery Pouches</span>
+                </div>
+                <div class="micro-card">
+                    <div class="micro-icon"><i class="fas fa-headphones"></i></div>
+                    <span>Earbud Pouches</span>
+                </div>
+                <div class="micro-card">
+                    <div class="micro-icon"><i class="fas fa-pencil-case"></i></div>
+                    <span>Square & Pencil Pouches</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 3. CATEGORY GROUP: OFFICE & LIFESTYLE -->
+        <div class="mosaic-group-wrapper">
+            <h3 class="group-title"><i class="fas fa-briefcase"></i> Office, Lifestyle & Others</h3>
+            <div class="mosaic-micro-grid">
+                <div class="micro-card">
+                    <div class="micro-icon"><i class="fas fa-book-open"></i></div>
+                    <span>Fabric Diaries</span>
+                </div>
+                <div class="micro-card">
+                    <div class="micro-icon"><i class="fas fa-tablet-alt"></i></div>
+                    <span>iPad Sleeves</span>
+                </div>
+                <div class="micro-card">
+                    <div class="micro-icon"><i class="fas fa-laptop"></i></div>
+                    <span>Laptop Bags</span>
+                </div>
+                <div class="micro-card">
+                    <div class="micro-icon"><i class="fas fa-shoe-prints"></i></div>
+                    <span>Fabric Slippers</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- ==========================================
+     HTML: VOCAL FOR LOCAL VISION SPOTLIGHT (UPDATED FOR PM VISION)
+     ========================================== -->
+<section class="vision-section">
+    <div class="container vision-container">
+        
+        <!-- LEFT SIDE: Emotional Narrative & PM Vision -->
+        <div class="vision-content">
+            <span class="vision-tag">Atmanirbhar Bharat & Pride</span>
+            <h2 class="vision-title">Answering the Nation's Call: Crafting India's Story</h2>
+            <div class="vision-line"></div>
+            
+            <p class="vision-text">
+                When our Honorable Prime Minister called upon the nation to establish a global footprint in the toy sector, it wasn't just a economic directive—it was a heartfelt invitation to revive our cultural soul. For centuries, our traditional roots have sparked imagination through safe, natural, and storytelling art. By actively choosing indigenous handcrafted creations over mass-imported plastic, we directly uplift the rural livelihoods keeping our heritage alive.
+            </p>
+            
+            <blockquote class="vision-quote">
+                "Our country has so much talent, so much heritage. I call upon our startups, entrepreneurs, and citizens to team up for toys... Let us be Vocal for Local and support our independent craftspeople to build a self-reliant India."
+            </blockquote>
+
+            <div class="vision-stats">
+                <div class="stat-item">
+                    <h3>50+</h3>
+                    <p>Artisans Empowered</p>
+                </div>
+                <div class="stat-item">
+                    <h3>100%</h3>
+                    <p>Indigenous & Eco-Friendly</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- RIGHT SIDE: The Interactive Circular Badge (Maintained Design) -->
+        <div class="vision-graphic-container">
+            <div class="circular-badge-wrapper">
+                
+                <!-- Rotating External Label Rings -->
+                <div class="rotating-tags-ring">
+                    <svg viewBox="0 0 300 300" class="rotating-text-svg">
+                        <path id="textPath" d="M 150, 150 m -120, 0 a 120,120 0 1,1 240,0 a 120,120 0 1,1 -240,0" fill="transparent"/>
+                        <text class="circle-text">
+                            <textPath href="#textPath" startOffset="0%">
+                                • VOCAL FOR LOCAL • ATMANIRBHAR BHARAT • PROMOTE FABRIC TOYS • HANDCRAFTED IN JAIPUR
+                            </textPath>
+                        </text>
+                    </svg>
+                </div>
+
+                <!-- Center Moving Focal Image -->
+                <div class="artisan-core-image">
+                    <!-- Replace with a high-res photo of your actual artisans working -->
+                    <img src="Assets/img/circle photo.webp" alt="Artisan at work in Jaipur">
+                    <div class="image-overlay"></div>
+                </div>
+
+                <!-- Subtle Decorative Floating Blobs -->
+                <div class="floating-blob blob-1"></div>
+                <div class="floating-blob blob-2"></div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+    <section class="values-section">
+    <div class="container">
+        <div class="values-header">
+            <h2 class="section-title">Our Core Values</h2>
+            <div class="heading-separator"></div>
+        </div>
+
+        <div class="values-grid">
+            <div class="value-item">
+                <div class="icon-wrapper">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <h3>Made in India</h3>
+            </div>
+
+            <div class="value-item">
+                <div class="icon-wrapper">
+                    <i class="fas fa-female"></i>
+                </div>
+                <h3>Women-Made</h3>
+            </div>
+
+            <div class="value-item">
+                <div class="icon-wrapper">
+                    <i class="fas fa-hands"></i>
+                </div>
+                <h3>Handcrafted</h3>
+            </div>
+
+            <div class="value-item">
+                <div class="icon-wrapper">
+                    <i class="fas fa-leaf"></i>
+                </div>
+                <h3>Eco-Friendly</h3>
+            </div>
+
+            <div class="value-item">
+                <div class="icon-wrapper">
+                    <i class="fas fa-recycle"></i>
+                </div>
+                <h3>Zero Waste</h3>
+            </div>
+
+            <div class="value-item">
+                <div class="icon-wrapper">
+                    <i class="fas fa-seedling"></i>
+                </div>
+                <h3>Sustainable</h3>
+            </div>
+
+            <div class="value-item">
+                <div class="icon-wrapper">
+                    <i class="fas fa-om"></i>
+                </div>
+                <h3>Culturally Rooted</h3>
+            </div>
+
+            <div class="value-item">
+                <div class="icon-wrapper">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h3>Livelihood Generating</h3>
+            </div>
+        </div>
+    </div>
+</section>
+</main> 
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-column brand-col">
+                <div class="footer-brand">
+                    <span class="brand-ansh">Ansh</span><span class="brand-creation">Creation</span>
+                </div>
+                <p class="footer-tagline">Empowering women through traditional craftsmanship and sustainable home art.</p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/anshcreation0223/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://wa.me/+919509763013" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-column links-col">
+                <h3>Quick Links</h3>
+                <ul class="footer-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">Our Story</a></li>
+                    <li><a href="shop.html">Shop Collection</a></li>
+                    <li><a href="career.html">Join Our Community</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column contact-col">
+                <h3>Get In Touch</h3>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>+91 95097 63013</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>ansh02creations@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Amer, Jaipur, Rajasthan</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Ansh Creation. All Rights Reserved. Crafted with <i class="fas fa-heart"></i> in Jaipur.</p>
+            
+            <div class="agency-credit">
+                <span>Design & Developed by</span>
+                <a href="https://shadow15.in/" target="_blank" class="shadow-link">
+                    <span class="s-letter">S</span>hadow<span class="s-number">15</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="script.js"></script>
+     <script src="shop.js"></script>
+</body>
+</html>

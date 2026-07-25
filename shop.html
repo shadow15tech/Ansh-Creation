@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ansh Creation | Handmade Home Products</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts for a premium look -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <!-- Brand Name on the Left -->
+       <div class="nav-brand">
+    <a href="index.html">
+        <img src="Assets/Logo.webp" alt="Ansh Creation Logo" class="nav-logo">
+        <!-- <span class="brand-ansh">Ansh</span>
+        <span class="brand-creation">Creation</span> -->
+    </a>
+</div>
+
+<style>
+    .nav-brand a {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        text-decoration: none;
+    }
+
+    .nav-logo {
+        width: 100px;
+        height: 150px;
+        object-fit: contain;
+        border-radius: 50%;
+    }
+
+    .brand-ansh {
+        font-size: 28px;
+        font-weight: 700;
+        color: #000;
+    }
+
+    .brand-creation {
+        font-size: 28px;
+        font-weight: 700;
+        color: #c89b3c;
+    }
+
+    @media (max-width: 768px) {
+        .nav-logo {
+            width: 100px;
+            height: 80px;
+        }
+
+        .brand-ansh,
+        .brand-creation {
+            font-size: 22px;
+        }
+    }
+</style>
+
+        <!-- Links in the Middle -->
+        <div class="nav-links">
+            <a href="index.html" >Home</a>
+            <a href="about.html"  >About Us</a>
+            <a href="shop.html" class="active"  >Shop</a>
+            <a href="career.html">Careers</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+        
+        <!-- Action Button on the Right -->
+        <div class="nav-actions">
+            <a href="https://wa.me/+919509763013" class="whatsapp-btn" target="_blank">
+                <i class="fab fa-whatsapp"></i> <span>WhatsApp Booking</span>
+            </a>
+        </div>
+
+        <!-- Mobile Menu Toggle -->
+        <div class="menu-toggle" id="mobile-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+<!-- ==========================================
+     HTML FOR SHOP PAGE (UPDATED CATEGORIES)
+     ========================================== -->
+<section class="shop-section">
+    <div class="container">
+        
+        <div class="shop-header">
+            <span class="sub-heading">Our Collection</span>
+            <h2 class="main-heading">Handcrafted for Your Home</h2>
+            <div class="heading-separator"></div>
+            <p class="shop-desc">Explore our authentic range of handcrafted products. Every purchase directly empowers our artisans in Jaipur.</p>
+        </div>
+
+        <!-- NEW Dynamic Category Filters -->
+        <div class="shop-filters" id="shop-filters">
+
+    <button class="filter-btn active" data-filter="toys">
+        Fabric Toys & Keychains
+    </button>
+
+    <button class="filter-btn" data-filter="office">
+        Office Supplies
+    </button>
+
+    <button class="filter-btn" data-filter="decor">
+        Home Decor
+    </button>
+
+    <button class="filter-btn" data-filter="accessories">
+        Accessories
+    </button>
+
+    <button class="filter-btn" data-filter="bags">
+        Bags & Pouches
+    </button>
+
+    <button class="filter-btn" data-filter="crochet">
+        Crochet
+    </button>
+
+    <button class="filter-btn" data-filter="Sunglass">
+        Sunglasses Cover
+    </button>
+
+    <button class="filter-btn" data-filter="Gift">
+        Gift Hamper
+    </button>
+
+</div>
+
+        <!-- The Empty Grid (Filled by JavaScript) -->
+        <div class="product-grid" id="product-grid"></div>
+
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-column brand-col">
+                <div class="footer-brand">
+                    <span class="brand-ansh">Ansh</span><span class="brand-creation">Creation</span>
+                </div>
+                <p class="footer-tagline">Empowering women through traditional craftsmanship and sustainable home art.</p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/anshcreation0223/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://wa.me/+919509763013" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-column links-col">
+                <h3>Quick Links</h3>
+                <ul class="footer-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">Our Story</a></li>
+                    <li><a href="shop.html">Shop Collection</a></li>
+                    <li><a href="career.html">Join Our Community</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column contact-col">
+                <h3>Get In Touch</h3>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>+91 95097 63013</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>ansh02creations@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Amer, Jaipur, Rajasthan</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Ansh Creation. All Rights Reserved. Crafted with <i class="fas fa-heart"></i> in Jaipur.</p>
+            
+            <div class="agency-credit">
+                <span>Design & Developed by</span>
+                <a href="https://shadow15.in/" target="_blank" class="shadow-link">
+                    <span class="s-letter">S</span>hadow<span class="s-number">15</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="shop.js"></script>
+     <script src="script.js"></script>
+</body>
+</html>

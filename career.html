@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ansh Creation | Handmade Home Products</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts for a premium look -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <!-- Brand Name on the Left -->
+       <div class="nav-brand">
+    <a href="index.html">
+        <img src="Assets/Logo.webp" alt="Ansh Creation Logo" class="nav-logo">
+        <!-- <span class="brand-ansh">Ansh</span>
+        <span class="brand-creation">Creation</span> -->
+    </a>
+</div>
+
+<style>
+    .nav-brand a {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        text-decoration: none;
+    }
+
+    .nav-logo {
+        width: 100px;
+        height: 150px;
+        object-fit: contain;
+        border-radius: 50%;
+    }
+
+    .brand-ansh {
+        font-size: 28px;
+        font-weight: 700;
+        color: #000;
+    }
+
+    .brand-creation {
+        font-size: 28px;
+        font-weight: 700;
+        color: #c89b3c;
+    }
+
+    @media (max-width: 768px) {
+        .nav-logo {
+            width: 100px;
+            height: 80px;
+        }
+
+        .brand-ansh,
+        .brand-creation {
+            font-size: 22px;
+        }
+    }
+</style>
+
+        <!-- Links in the Middle -->
+        <div class="nav-links">
+            <a href="index.html" >Home</a>
+            <a href="about.html"  >About Us</a>
+            <a href="shop.html">Shop</a>
+            <a href="career.html"  class="active">Careers</a>
+            <a href="contact.html" >Contact Us</a>
+        </div>
+        
+        <!-- Action Button on the Right -->
+        <div class="nav-actions">
+            <a href="https://wa.me/+919509763013" class="whatsapp-btn" target="_blank">
+                <i class="fab fa-whatsapp"></i> <span>WhatsApp Booking</span>
+            </a>
+        </div>
+
+        <!-- Mobile Menu Toggle -->
+        <div class="menu-toggle" id="mobile-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+<!-- ==========================================
+     HTML: CAREER & IMPACT - CORE PILLARS (SECTION 1)
+     ========================================== -->
+<section class="career-pillars-section">
+    <div class="container pillars-container">
+        
+        <!-- LEFT COLUMN: Elegant Circular Geometric Interaction Grid -->
+        <div class="pillars-visual-zone">
+            <div class="circle-interaction-mesh">
+                
+                <!-- Central Brand Core Ambient Element -->
+                <div class="mesh-core-orb">
+                    <span>Impact</span>
+                </div>
+
+                <!-- Pillar Card 1: Volunteer & Support -->
+                <div class="mesh-pillar-card position-top-left active" data-target="narrative-volunteer">
+                    <div class="card-circle-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h4>Be a Volunteer</h4>
+                </div>
+
+                <!-- Pillar Card 2: Learn & Work -->
+                <div class="mesh-pillar-card position-top-right" data-target="narrative-learn">
+                    <div class="card-circle-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h4>Learn & Work</h4>
+                </div>
+
+                <!-- Pillar Card 3: Teach Women Crafts -->
+                <div class="mesh-pillar-card position-bottom-center" data-target="narrative-teach">
+                    <div class="card-circle-icon">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <h4>Teach & Empower</h4>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- RIGHT COLUMN: Dynamic Emotional Narrative Switcher -->
+        <div class="pillars-text-zone">
+            <span class="pillar-sub-tag">Join Our Movement</span>
+            
+            <!-- Narrative 1: Volunteer (Visible by Default) -->
+            <div class="narrative-content-block active" id="narrative-volunteer">
+                <h2 class="narrative-main-title">Be a Volunteer</h2>
+                <div class="narrative-accent-line"></div>
+                <p class="narrative-desc">
+                    Change doesn't happen in isolation. By joining us as a volunteer, you lend your unique skills, energy, and voice to help manage, organize, and expand a grassroots artisan ecosystem. Whether you contribute locally in Jaipur or assist digitally, your time directly accelerates sustainable fashion.
+                </p>
+                <a href="#apply-form" class="narrative-action-btn">Register as Volunteer <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <!-- Narrative 2: Learn & Work (Hidden by Default) -->
+            <div class="narrative-content-block" id="narrative-learn">
+                <h2 class="narrative-main-title">Learn & Work</h2>
+                <div class="narrative-accent-line"></div>
+                <p class="narrative-desc">
+                    No prior experience? No problem. We provide structured training programs where you can master the intricate precision of traditional fabric toy assembly, pattern cutting, and quality control. Once trained, you step straight into structured fair-wage manufacturing roles within our production facility.
+                </p>
+                <a href="#apply-form" class="narrative-action-btn">Start Learning <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <!-- Narrative 3: Teach & Empower (Hidden by Default) -->
+            <div class="narrative-content-block" id="narrative-teach">
+                <h2 class="narrative-main-title">Teach Artisans</h2>
+                <div class="narrative-accent-line"></div>
+                <p class="narrative-desc">
+                    If you possess expertise in modern design, product development, crochet methodology, or scaling inventory frameworks, your knowledge can transform lives. Come teach new skillsets to our growing cluster of women artisans, enabling them to expand their production capabilities.
+                </p>
+                <a href="#apply-form" class="narrative-action-btn">Become a Mentor <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ==========================================
+     HTML: CAREER PAGE - SECTION 2
+     LEARN, CRAFT & TEACH EMPOWERMENT JOURNEY
+     ========================================== -->
+<section class="empower-journey-section">
+    <div class="container journey-container">
+        
+        <!-- Part A: Interactive Timeline Controls (Left) -->
+        <div class="journey-controls">
+            <span class="sub-heading">Pass the Art, Multiply the Impact</span>
+            <h2 class="main-heading">Learn, Craft & Teach</h2>
+            <div class="heading-separator"></div>
+            
+            <p class="section-desc">True empowerment happens when a skilled hand reaches back to guide another. At *Ansh Creation*, our journey is built on two beautiful pillars: mastering the heritage of handmade crafts, and stepping up to lift other women along the way.</p>
+
+            <!-- Vertical Timeline Track -->
+            <div class="vertical-timeline" id="empower-timeline">
+                <div class="timeline-line"></div>
+                
+                <!-- Stage 1: Learning the Craft (Active by default) -->
+                <div class="timeline-item active" data-stage="1">
+                    <div class="timeline-dot">1</div>
+                    <div class="timeline-content">
+                        <h4>Mastering Fabric Toy Magic</h4>
+                        <p>Learn the delicate secrets of selecting textiles, precise block stitching, and bringing organic cotton toys to life.</p>
+                    </div>
+                </div>
+
+                <!-- Stage 2: Shaping Homes -->
+                <div class="timeline-item" data-stage="2">
+                    <div class="timeline-dot">2</div>
+                    <div class="timeline-content">
+                        <h4>Designing Heritage Home Decor</h4>
+                        <p>Discover how traditional Jaipuri motifs, mirrors, and embroidery are transformed into premium wall hangings and accent pieces.</p>
+                    </div>
+                </div>
+
+                <!-- Stage 3: Stepping Into Leadership -->
+                <div class="timeline-item" data-stage="3">
+                    <div class="timeline-dot">3</div>
+                    <div class="timeline-content">
+                        <h4>The Art of Mentorship</h4>
+                        <p>Gain the confidence and leadership skills needed to articulate your knowledge and manage a cooperative workshop group.</p>
+                    </div>
+                </div>
+
+                <!-- Stage 4: Teaching the Sisterhood -->
+                <div class="timeline-item" data-stage="4">
+                    <div class="timeline-dot">4</div>
+                    <div class="timeline-content">
+                        <h4>Empowering the Next Generation</h4>
+                        <p>Take your place as a mentor, teaching financial independence and craft precision to new women entering our cluster.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Part B: Dynamic Visualization Display (Right) -->
+        <div class="journey-visualizer">
+            <div class="visual-card-wrapper">
+                
+                <!-- Center Artisan Focal Image -->
+                <div class="central-image-orb">
+                    <!-- Keeps the same dynamic image target for your JavaScript swapper -->
+                    <img src="Assets/img/circle photo.webp" alt="Artisans teaching and working in Jaipur" id="visual-artisan-img">
+                </div>
+
+                <!-- Dynamic Data Points (Swapped by JS) -->
+                <div class="dynamic-overlay-box" id="visual-data-box">
+                    <div class="overlay-inner active" id="data-stage-1">
+                        <span class="overlay-stage-num">01</span>
+                        <h3 class="overlay-stage-title">First Stitches</h3>
+                        <p>Every toy tells a story, and yours begins with learning to weave love and heritage into every single stitch.</p>
+                    </div>
+                </div>
+
+                <!-- Floating Accent Elements -->
+                <div class="floating-accent accent-crochet">
+                    <i class="fas fa-yarn"></i>
+                </div>
+                <div class="floating-accent accent-toy">
+                    <i class="fas fa-heart"></i>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ==========================================
+     HTML: CAREER PAGE - SECTION 3
+     PRODUCT RESELLER ENTREPRENEURSHIP PROGRAM
+     ========================================== -->
+<section class="reseller-section" id="apply-form">
+    <div class="container reseller-container">
+        
+        <!-- LEFT COLUMN: The Partnership Value Proposition -->
+        <div class="reseller-info-zone">
+            <span class="sub-heading">Empower Your Business</span>
+            <h2 class="main-heading">Become an Authorized Reseller</h2>
+            <div class="heading-separator"></div>
+            
+            <p class="section-desc">
+                Whether you run a boutique store, an online Instagram shop, or want to launch a independent home business, our reseller network gives you direct access to India's finest mass-scale handcrafted manufacturing pipeline. You don't just sell products; you share a legacy of artisan empowerment.
+            </p>
+
+            <!-- Benefit Cards Stack -->
+            <div class="benefits-stack">
+                
+                <!-- Benefit 1 -->
+                <div class="benefit-row">
+                    <div class="benefit-icon">
+                        <i class="fas fa-percentage"></i>
+                    </div>
+                    <div class="benefit-text">
+                        <h4>Premium Wholesale Margins</h4>
+                        <p>Gain high-tier pricing structures on bulk orders of fabric toys, keychains, crochet art, and office supplies, ensuring highly profitable retail returns.</p>
+                    </div>
+                </div>
+
+                <!-- Benefit 2 -->
+                <div class="benefit-row">
+                    <div class="benefit-icon">
+                        <i class="fas fa-boxes"></i>
+                    </div>
+                    <div class="benefit-text">
+                        <h4>Mass Manufacturing Scale</h4>
+                        <p>Backed by our large-scale production setup in Jaipur, we seamlessly fulfill massive commercial supply quantities with consistent premium quality checks.</p>
+                    </div>
+                </div>
+
+                <!-- Benefit 3 -->
+                <div class="benefit-row">
+                    <div class="benefit-icon">
+                        <i class="fas fa-bullhorn"></i>
+                    </div>
+                    <div class="benefit-text">
+                        <h4>Marketing & Storytelling Support</h4>
+                        <p>Receive verified high-definition product imagery, video reels, and artisan impact stories to easily attract and convert your local customer audience.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- RIGHT COLUMN: Elegant Lead Generation Application Form -->
+        <div class="reseller-form-zone">
+            <div class="form-wrapper-card">
+                <div class="form-header">
+                    <h3>Partnership Application</h3>
+                    <p>Submit your details to receive our wholesale catalog and pricing schedule.</p>
+                </div>
+
+                <form action="#" method="POST" class="reseller-form" id="resellerForm">
+                    
+                    <!-- Input: Full Name -->
+                    <div class="form-group">
+                        <label for="reseller-name">Full Name *</label>
+                        <input type="text" id="reseller-name" name="name" required placeholder="e.g., Priya Sharma">
+                    </div>
+
+                    <!-- Row: Email & WhatsApp -->
+                    <div class="form-row-two">
+                        <div class="form-group">
+                            <label for="reseller-email">Email Address *</label>
+                            <input type="email" id="reseller-email" name="email" required placeholder="name@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="reseller-phone">WhatsApp Number *</label>
+                            <input type="tel" id="reseller-phone" name="phone" required placeholder="10-digit number">
+                        </div>
+                    </div>
+
+                    <!-- Input: Business Type Dropdown -->
+                    <div class="form-group">
+                        <label for="reseller-type">Your Business Model *</label>
+                        <select id="reseller-type" name="business_type" required>
+                            <option value="" disabled selected>Select your model...</option>
+                            <option value="retail_store">Physical Retail Store / Boutique</option>
+                            <option value="online_shop">Online Website / E-commerce Shop</option>
+                            <option value="instagram_whatsapp">Social Media Seller (Instagram / WhatsApp)</option>
+                            <option value="individual">Home-Based Individual Entrepreneur</option>
+                            <option value="corporate">Corporate Gifting Partner</option>
+                        </select>
+                    </div>
+
+                    <!-- Input: Message -->
+                    <div class="form-group">
+                        <label for="reseller-msg">Tell us about your business or target area</label>
+                        <textarea id="reseller-msg" name="message" rows="4" placeholder="Briefly describe your market segment or any bulk inquiries..."></textarea>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="submit-partner-btn">
+                        <span>Apply for Reseller Access</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+
+                </form>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-column brand-col">
+                <div class="footer-brand">
+                    <span class="brand-ansh">Ansh</span><span class="brand-creation">Creation</span>
+                </div>
+                <p class="footer-tagline">Empowering women through traditional craftsmanship and sustainable home art.</p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/anshcreation0223/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://wa.me/+919509763013" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-column links-col">
+                <h3>Quick Links</h3>
+                <ul class="footer-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">Our Story</a></li>
+                    <li><a href="shop.html">Shop Collection</a></li>
+                    <li><a href="career.html">Join Our Community</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column contact-col">
+                <h3>Get In Touch</h3>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>+91 95097 63013</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>ansh02creations@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Amer, Jaipur, Rajasthan</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Ansh Creation. All Rights Reserved. Crafted with <i class="fas fa-heart"></i> in Jaipur.</p>
+            
+            <div class="agency-credit">
+                <span>Design & Developed by</span>
+                <a href="https://shadow15.in/" target="_blank" class="shadow-link">
+                    <span class="s-letter">S</span>hadow<span class="s-number">15</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

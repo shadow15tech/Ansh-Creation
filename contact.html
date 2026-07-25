@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ansh Creation | Handmade Home Products</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts for a premium look -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+    <nav class="navbar">
+        <!-- Brand Name on the Left -->
+       <div class="nav-brand">
+    <a href="index.html">
+        <img src="Assets/Logo.webp" alt="Ansh Creation Logo" class="nav-logo">
+        <!-- <span class="brand-ansh">Ansh</span>
+        <span class="brand-creation">Creation</span> -->
+    </a>
+</div>
+
+<style>
+    .nav-brand a {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        text-decoration: none;
+    }
+
+    .nav-logo {
+        width: 100px;
+        height: 150px;
+        object-fit: contain;
+        border-radius: 50%;
+    }
+
+    .brand-ansh {
+        font-size: 28px;
+        font-weight: 700;
+        color: #000;
+    }
+
+    .brand-creation {
+        font-size: 28px;
+        font-weight: 700;
+        color: #c89b3c;
+    }
+
+    @media (max-width: 768px) {
+        .nav-logo {
+            width: 100px;
+            height: 80px;
+        }
+
+        .brand-ansh,
+        .brand-creation {
+            font-size: 22px;
+        }
+    }
+</style>
+
+        <!-- Links in the Middle -->
+        <div class="nav-links">
+            <a href="index.html" >Home</a>
+            <a href="about.html"  >About Us</a>
+            <a href="shop.html">Shop</a>
+            <a href="career.html">Careers</a>
+            <a href="contact.html"  class="active">Contact Us</a>
+        </div>
+        
+        <!-- Action Button on the Right -->
+        <div class="nav-actions">
+            <a href="https://wa.me/+919509763013" class="whatsapp-btn" target="_blank">
+                <i class="fab fa-whatsapp"></i> <span>WhatsApp Booking</span>
+            </a>
+        </div>
+
+        <!-- Mobile Menu Toggle -->
+        <div class="menu-toggle" id="mobile-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+
+    <!-- ==========================================
+     HTML: CONTACT PAGE - NATIONAL ARTISAN IMPACT
+     ========================================== -->
+<section class="pm-impact-section">
+    <div class="container pm-impact-container">
+        
+        <!-- LEFT ZONE: The Sacred Circle Image Frame -->
+        <div class="pm-impact-visual">
+            <div class="artisan-circle-wrapper">
+                
+                <!-- Main Focal Circle Image -->
+                <div class="artisan-main-orb">
+                    <!-- High-res photo of an artisan woman sewing a fabric toy -->
+                    <img src="Assets/img/circle photo.webp" alt="Artisan woman crafting fabric toys in Jaipur">
+                </div>
+
+                <!-- Emotional Accent Tags Floating Around the Circle -->
+                <div class="floating-tag tag-top">
+                    <span><i class="fas fa-heart"></i> Women Empowerment</span>
+                </div>
+                <div class="floating-tag tag-bottom">
+                    <span><i class="fas fa-star"></i> Vocal For Local</span>
+                </div>
+
+                <!-- Soft Abstract Emotional Background Glows -->
+                <div class="glow-sphere sphere-orange"></div>
+                <div class="glow-sphere sphere-blue"></div>
+            </div>
+        </div>
+
+        <!-- RIGHT ZONE: Deep Emotional Narrative -->
+        <div class="pm-impact-content">
+            <span class="impact-sub-tag">A Nation's Pride, A Mother's Smile</span>
+            <h2 class="impact-main-heading">When You Buy a Toy, You Lift a Home</h2>
+            <div class="impact-separator"></div>
+            
+            <p class="impact-para-deep">
+                As championed by our Honorable Prime Minister, promoting indigenous fabric toys isn't merely a shift in manufacturing—it is a revival of India's cultural soul and a direct lifeline to our rural sisterhood. Every single stitch on our handmade elephants, keychains, and home decor pieces represents a woman breaking the chains of financial dependency.
+            </p>
+            
+            <blockquote class="pm-quote-box">
+                "Let us team up for local toys. Our rich heritage can turn simple fabrics into beautiful, sustainable stories for the global stage, while ensuring our independent women craftspeople become the backbone of an Atmanirbhar Bharat."
+            </blockquote>
+
+            <p class="impact-para-secondary">
+                When you choose these handcrafted creations over mass-imported plastic, you aren't just decorating a space or gifting a child. You are paying for a daughter's education, funding a family's healthcare, and validating the dignified labor of an artisan mother working in Jaipur. 
+            </p>
+            
+            <div class="impact-foot-note">
+                <i class="fas fa-hands"></i> <span>Every interaction brings us one step closer to keeping a heritage alive. Let's create an impact together.</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="minimal-custom-order">
+    <div class="container order-container">
+        
+        <div class="order-text">
+            <h2>Custom Orders</h2>
+            <p>Have a specific design in mind? Let our artisans bring your vision to life.</p>
+        </div>
+
+        <form class="minimal-form" id="customOrderForm">
+            <div class="input-row">
+                <input type="text" id="clientName" placeholder="Full Name" required>
+                <input type="tel" id="clientPhone" placeholder="WhatsApp Number" required>
+            </div>
+
+            <select id="productInterest" required>
+                <option value="" disabled selected>Select Category...</option>
+                <option value="corporate">Corporate Gifting</option>
+                <option value="toys">Fabric Toys
+Fabric Toys & Keychains</option>
+                <option value="bags">Office Supplies
+</option>
+                <option value="decor">Accessories</option>
+                 <option value="decor">Bags & Pouches</option>
+                  <option value="decor">Crochet</option>
+                   <option value="decor">Gift Hamper</option>
+                    <option value="decor">Sunglasses Cover</option>
+                     <option value="decor">Your Design</option>
+            </select>
+
+            <textarea id="customDetails" rows="4" placeholder="Design details, colors, or quantity..." required></textarea>
+
+            <button type="submit" class="minimal-btn">Submit Request</button>
+        </form>
+
+    </div>
+</section>
+
+
+<!-- ==========================================
+     HTML FOR CONTACT US PAGE
+     ========================================== -->
+<section class="contact-section">
+    <div class="container">
+        
+        <div class="contact-header">
+            <!-- <span class="sub-heading">Reach Out</span> -->
+            <h2 class="main-heading">Let's Create Together</h2>
+            <div class="heading-separator"></div>
+        </div>
+
+        <div class="contact-grid">
+            
+            <!-- LEFT SIDE: Image & Overlapping Info Card -->
+            <div class="contact-visual">
+                <div class="contact-image">
+                    <!-- Aesthetic workspace or artisan photo -->
+                    <img src="Assets/contact photo.png" alt="Ansh Creation Workspace">
+                </div>
+                
+                <!-- The Elegant Info Card -->
+                <div class="contact-info-card">
+                    <h3>Headquarters</h3>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Address</h4>
+                            <p>Amer, Jaipur, Rajasthan<br>India</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email Us</h4>
+                            <p>ansh02creations@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <h4>Call Us</h4>
+                            <p>+91 95097 63013</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RIGHT SIDE: Advanced Floating-Label Form -->
+            <div class="contact-form-container">
+                <h3 class="form-title">Send a Message</h3>
+                <p class="form-desc">Whether you have a question about our handcrafted products or want to collaborate, we'd love to hear from you.</p>
+                
+                <form id="anshContactForm" class="advanced-form">
+                    
+                    <div class="input-row">
+                        <div class="input-group">
+                            <input type="text" id="name" required autocomplete="off">
+                            <label for="name">Your Name</label>
+                            <div class="line"></div>
+                        </div>
+                        
+                        <div class="input-group">
+                            <input type="email" id="email" required autocomplete="off">
+                            <label for="email">Your Email</label>
+                            <div class="line"></div>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="text" id="subject" required autocomplete="off">
+                        <label for="subject">Subject</label>
+                        <div class="line"></div>
+                    </div>
+
+                    <div class="input-group">
+                        <textarea id="message" rows="5" required></textarea>
+                        <label for="message">Your Message</label>
+                        <div class="line"></div>
+                    </div>
+
+                    <button type="submit" class="submit-btn">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                    
+                    <!-- Success Message (Hidden by default) -->
+                    <div id="formSuccess" class="form-success">
+                        <i class="fas fa-check-circle"></i> Message sent successfully! We will reply soon.
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-column brand-col">
+                <div class="footer-brand">
+                    <span class="brand-ansh">Ansh</span><span class="brand-creation">Creation</span>
+                </div>
+                <p class="footer-tagline">Empowering women through traditional craftsmanship and sustainable home art.</p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/anshcreation0223/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-column links-col">
+                <h3>Quick Links</h3>
+                <ul class="footer-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">Our Story</a></li>
+                    <li><a href="shop.html">Shop Collection</a></li>
+                    <li><a href="career.html">Join Our Community</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column contact-col">
+                <h3>Get In Touch</h3>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>+91 95097 63013</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>ansh02creations@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Amer, Jaipur, Rajasthan</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Ansh Creation. All Rights Reserved. Crafted with <i class="fas fa-heart"></i> in Jaipur.</p>
+            
+            <div class="agency-credit">
+                <span>Design & Developed by</span>
+                <a href="https://shadow15.in/" target="_blank" class="shadow-link">
+                    <span class="s-letter">S</span>hadow<span class="s-number">15</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

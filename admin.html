@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | Ansh Creation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+    <button class="mobile-menu-btn" id="menuToggle">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <div class="admin-wrapper">
+        
+        <aside class="admin-sidebar" id="sidebar">
+            <div class="sidebar-logo">
+                <h2>Ansh <span>Admin</span></h2>
+                <button class="close-sidebar" id="closeSidebar"><i class="fas fa-times"></i></button>
+            </div>
+            
+            <ul class="sidebar-menu">
+                <li><a href="#" class="nav-link active" data-target="dashboard-section"><i class="fas fa-th-large"></i> Dashboard</a></li>
+                <li><a href="#" class="nav-link" data-target="products-section"><i class="fas fa-box-open"></i> Products</a></li>
+                <li><a href="#" class="nav-link" data-target="leads-section"><i class="fas fa-users"></i> Reseller Leads</a></li>
+                <li><a href="#" class="nav-link" data-target="applications-section"><i class="fas fa-envelope"></i> Applications</a></li>
+                <li><a href="#" class="nav-link" data-target="settings-section"><i class="fas fa-cog"></i> Settings</a></li>
+            </ul>
+
+            <div class="sidebar-bottom">
+                <a href="index.html" class="logout-btn"><i class="fas fa-sign-out-alt"></i> Logout</a>
+            </div>
+        </aside>
+
+        <main class="admin-main">
+            
+            <header class="admin-header">
+                <div class="header-search">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search...">
+                </div>
+                <div class="header-profile">
+                    <div class="profile-info">
+                        <span class="admin-name">Admin Workspace</span>
+                        <span class="admin-role">Manager</span>
+                    </div>
+                    <div class="profile-img">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                </div>
+            </header>
+
+            <section id="dashboard-section" class="admin-content tab-section active">
+                <div class="content-header">
+                    <div>
+                        <h1 class="page-title">Overview</h1>
+                        <p class="page-subtitle">Welcome back! Here is what's happening today.</p>
+                    </div>
+                </div>
+                
+                <div class="stats-container">
+                    <div class="stat-card">
+                        <div class="stat-icon box-icon"><i class="fas fa-box"></i></div>
+                        <div class="stat-details">
+                            <h3>24</h3>
+                            <p>Total Products</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon users-icon"><i class="fas fa-handshake"></i></div>
+                        <div class="stat-details">
+                            <h3>12</h3>
+                            <p>New Resellers</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon apps-icon"><i class="fas fa-file-alt"></i></div>
+                        <div class="stat-details">
+                            <h3>5</h3>
+                            <p>Pending Applications</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="products-section" class="admin-content tab-section">
+                <div class="content-header">
+                    <div>
+                        <h1 class="page-title">Product Inventory</h1>
+                        <p class="page-subtitle">Manage your fabric toys and lifestyle products.</p>
+                    </div>
+                    <button class="add-new-btn"><i class="fas fa-plus"></i> Add Product</button>
+                </div>
+
+                <div class="table-card">
+                    <table class="data-table" id="productsTable">
+                        <thead>
+                            <tr>
+                                <th>Image</th>
+                                <th>Product Name</th>
+                                <th>Category</th>
+                                <th>Price (₹)</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><img src="https://images.unsplash.com/photo-1590483840742-b7e64ccba950?q=80&w=150" alt="Product" class="table-thumb"></td>
+                                <td><strong>2-Leg Fabric Elephant</strong></td>
+                                <td>Fabric Toys</td>
+                                <td>₹199</td>
+                                <td><span class="status-badge status-active">In Stock</span></td>
+                                <td>
+                                    <button class="action-btn edit"><i class="fas fa-pen"></i></button>
+                                    <button class="action-btn delete" onclick="this.closest('tr').remove()"><i class="fas fa-trash"></i></button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section id="leads-section" class="admin-content tab-section">
+                <div class="content-header">
+                    <div>
+                        <h1 class="page-title">Reseller Applications</h1>
+                        <p class="page-subtitle">Manage partnership inquiries and wholesale leads.</p>
+                    </div>
+                    <button class="add-new-btn" style="background-color: #10b981;"><i class="fas fa-download"></i> Export CSV</button>
+                </div>
+
+                <div class="table-card">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Applicant Name</th>
+                                <th>Contact Info</th>
+                                <th>Business Model</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>04 Jun 2026</td>
+                                <td><strong>Priya Sharma</strong></td>
+                                <td>
+                                    <div class="contact-line"><i class="fas fa-envelope"></i> priya@example.com</div>
+                                    <div class="contact-line"><i class="fas fa-phone"></i> +91 9876543210</div>
+                                </td>
+                                <td>Boutique Store</td>
+                                <td><span class="status-badge status-warning">Pending Review</span></td>
+                                <td>
+                                    <a href="https://wa.me/919876543210" target="_blank" class="action-btn whatsapp-btn" title="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                                    <button class="action-btn delete" onclick="this.closest('tr').remove()" title="Dismiss"><i class="fas fa-times"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>03 Jun 2026</td>
+                                <td><strong>Neha Gupta</strong></td>
+                                <td>
+                                    <div class="contact-line"><i class="fas fa-envelope"></i> neha.g@example.com</div>
+                                    <div class="contact-line"><i class="fas fa-phone"></i> +91 9123456789</div>
+                                </td>
+                                <td>Instagram Seller</td>
+                                <td><span class="status-badge status-active">Approved</span></td>
+                                <td>
+                                    <a href="https://wa.me/919123456789" target="_blank" class="action-btn whatsapp-btn" title="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                                    <button class="action-btn delete" onclick="this.closest('tr').remove()" title="Dismiss"><i class="fas fa-times"></i></button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <div class="modal-overlay" id="productModal">
+        <div class="modal-card">
+            <div class="modal-header">
+                <h3>Add New Product</h3>
+                <button class="close-modal-btn" id="closeModalBtn"><i class="fas fa-times"></i></button>
+            </div>
+            
+            <form class="admin-form" id="addProductForm">
+                <div class="form-group">
+                    <label for="productName">Product Name</label>
+                    <input type="text" id="productName" placeholder="e.g., Block Print Tote Bag" required>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="productCategory">Category</label>
+                        <select id="productCategory" required>
+                            <option value="" disabled selected>Select Category...</option>
+                            <option value="fabric_toys">Fabric Toys</option>
+                            <option value="bags_utility">Bags & Utility</option>
+                            <option value="office_lifestyle">Office & Lifestyle</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="productPrice">Price (₹)</label>
+                        <input type="number" id="productPrice" placeholder="e.g., 499" required>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="productImage">Product Image URL</label>
+                    <input type="url" id="productImage" placeholder="https://example.com/image.jpg" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="productStatus">Stock Status</label>
+                    <select id="productStatus">
+                        <option value="in_stock">In Stock</option>
+                        <option value="low_stock">Low Stock</option>
+                        <option value="out_of_stock">Out of Stock</option>
+                    </select>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="cancel-btn" id="cancelBtn">Cancel</button>
+                    <button type="submit" class="save-btn">Save Product</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <!-- ==========================================
+                 TAB 4: APPLICATIONS (ARTISANS & VOLUNTEERS)
+                 ========================================== -->
+            <section id="applications-section" class="admin-content tab-section">
+                <div class="content-header">
+                    <div>
+                        <h1 class="page-title">Team & Volunteer Applications</h1>
+                        <p class="page-subtitle">Manage women artisan sign-ups and NGO volunteers.</p>
+                    </div>
+                </div>
+
+                <div class="table-card">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Applicant Name</th>
+                                <th>Applied For</th>
+                                <th>Location</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>04 Jun 2026</td>
+                                <td><strong>Meena Devi</strong></td>
+                                <td>Learn & Earn (Artisan)</td>
+                                <td>Sanganer, Jaipur</td>
+                                <td><span class="status-badge status-warning">Interview Pending</span></td>
+                                <td>
+                                    <button class="action-btn edit" title="View Details"><i class="fas fa-eye"></i></button>
+                                    <button class="action-btn delete" onclick="this.closest('tr').remove()" title="Reject"><i class="fas fa-trash"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>01 Jun 2026</td>
+                                <td><strong>Kavita Singh</strong></td>
+                                <td>Marketing Volunteer</td>
+                                <td>Malviya Nagar, Jaipur</td>
+                                <td><span class="status-badge status-active">Onboarded</span></td>
+                                <td>
+                                    <button class="action-btn edit" title="View Details"><i class="fas fa-eye"></i></button>
+                                    <button class="action-btn delete" onclick="this.closest('tr').remove()" title="Reject"><i class="fas fa-trash"></i></button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- ==========================================
+                 TAB 5: SYSTEM SETTINGS
+                 ========================================== -->
+            <section id="settings-section" class="admin-content tab-section">
+                <div class="content-header">
+                    <div>
+                        <h1 class="page-title">System Settings</h1>
+                        <p class="page-subtitle">Configure your dashboard, NGO details, and preferences.</p>
+                    </div>
+                    <button class="add-new-btn"><i class="fas fa-save"></i> Save Changes</button>
+                </div>
+
+                <div class="settings-grid">
+                    
+                    <!-- Card 1: NGO Details -->
+                    <div class="settings-card">
+                        <h3><i class="fas fa-store"></i> Foundation Details</h3>
+                        <form class="admin-form">
+                            <div class="form-group">
+                                <label>Organization Name</label>
+                                <input type="text" value="Aashayein Foundation">
+                            </div>
+                            <div class="form-group">
+                                <label>Public Contact Number (WhatsApp)</label>
+                                <input type="text" value="+91 9876543210">
+                            </div>
+                            <div class="form-group">
+                                <label>Support Email</label>
+                                <input type="email" value="contact@aashayeinfoundation.org">
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Card 2: Notifications -->
+                    <div class="settings-card">
+                        <h3><i class="fas fa-bell"></i> Notification Preferences</h3>
+                        <div class="setting-toggle-row">
+                            <div>
+                                <h4>New Reseller Lead</h4>
+                                <p>Get an email when a new boutique applies.</p>
+                            </div>
+                            <label class="toggle-switch">
+                                <input type="checkbox" checked>
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                        <div class="setting-toggle-row">
+                            <div>
+                                <h4>New Volunteer/Artisan</h4>
+                                <p>Get an email when someone wants to join.</p>
+                            </div>
+                            <label class="toggle-switch">
+                                <input type="checkbox" checked>
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                        <div class="setting-toggle-row">
+                            <div>
+                                <h4>Daily Summary</h4>
+                                <p>Receive a daily report of website visitors.</p>
+                            </div>
+                            <label class="toggle-switch">
+                                <input type="checkbox">
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+    <script src="admin.js"></script>
+</body>
+</html>
